@@ -9,15 +9,7 @@ terraform {
 
 provider "local" {}
 
-variable "filename" {
-  default = "bala-devops.txt"
-}
-
-variable "content" {
-  default = "Terraform learning practice"
-}
-
-resource "local_file" "file1" {
+resource "local_file" "devops_file" {
   filename = var.filename
   content  = var.content
 }
